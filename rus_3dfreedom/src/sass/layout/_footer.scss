@@ -1,0 +1,164 @@
+.footer-section {
+  background-color: var(--btn-footer-bg-color);
+  box-shadow: var(--footer-box-shadow);
+}
+
+.footer-logo-link {
+  display: block;
+  width: 192px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-logo {
+  width: 192px;
+}
+
+.contact-information {
+  margin-top: 19px;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+.footer-nav__item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__link {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.footer-social__item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-social__link {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.mail-address__text {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.mail-address__link {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: #487996;
+}
+
+.phone-numbers {
+  margin-top: 24px;
+}
+
+.phone-numbers__text {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.number__link-item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.number__link {
+  @include font(16px, 400, 20px);
+  letter-spacing: 0.01em;
+  color: #487996;
+}
+
+@media screen and(min-width: 768px) {
+  .contact-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-nav {
+    text-align: start;
+  }
+  .footer-social {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .address {
+    text-align: end;
+    margin-top: 0;
+  }
+
+  .phone-numbers {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-logo-link {
+    margin-right: 136px;
+    margin-left: 0;
+  }
+
+  .contact-information {
+    margin-top: 0;
+  }
+
+  .footer-nav {
+    margin-right: 87px;
+  }
+
+  .footer-social {
+    margin-right: 145px;
+  }
+
+  .address {
+    text-align: start;
+  }
+}

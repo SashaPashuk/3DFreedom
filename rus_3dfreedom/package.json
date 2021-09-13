@@ -1,0 +1,32 @@
+{
+  "name": "3d-freedom",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://SashaPashuk.github.io/3DFreedom",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url .", 
+    "predeploy": "npm run build -- --public-url /3dfreedom/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaPashuk/3DFreedom.git"
+  },
+  "keywords": [],
+  "author": "Alexander Pashuk <pashuk.sasha18@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

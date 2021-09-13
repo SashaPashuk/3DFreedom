@@ -1,0 +1,101 @@
+.mobile-menu {
+  @include min-width('small') {
+    background-image: url(../images/mobile/img1.jpg);
+    @include retina('../images//mobile/img1@2x.jpg', 'small');
+    background-size: 538px;
+  }
+  @include min-width('medium') {
+    background-image: url(../images/tablet/img1.jpg);
+    @include retina('../images//tablet/img1@2x.jpg', 'medium');
+    background-size: 962px;
+  }
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: top;
+}
+
+.close-button__icon {
+  padding: 5px;
+}
+
+.mobile-menu__header {
+  padding: 29px 0 32px;
+  @include min-width('medium') {
+    padding: 20px 0 35px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.mobile-menu__container {
+  padding-bottom: 25px;
+}
+
+.backdrop__link,
+.backdrop__text {
+  font-family: var(--main-font);
+  @include font(24px, 700, 30px);
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.backdrop__link--active {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent-color);
+}
+
+.backdrop__link:hover,
+.backdrop__link:focus {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent-color);
+}
+
+.backdrop__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.backdrop__item-servises {
+  margin-bottom: 24px;
+}
+
+.backdrop__link-servises {
+  font-family: var(--main-font);
+  @include font(24px, 500, 30px);
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.backdrop__list {
+  text-align: center;
+}
+.backdrop__item-servises::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background: var(--accent-color);
+  border-radius: 3px 0px;
+}
+.backdrop__item-servises {
+  @include flex-center;
+}

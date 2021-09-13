@@ -1,0 +1,80 @@
+<section class="contakt-page-contakts contakt-page__section">
+  <div class="container">
+    <div class="contakt-page__elements">
+      <div class="contact-page__form-wrap">
+        <h3 class="contakt-page__title-form">СВЯЖИТЕСЬ С НАМИ</h3>
+        
+          <form class="contakt-page__form" id="ajax-contact-form" enctype="multipart/form-data" method="post">
+          <div class="contakt-page__form-field">
+            <input id="name" type="text" name="name" placeholder=" " required minlength="2"
+              pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы"
+              class="contakt-page__form-input" />
+            <label class="contakt-page__form-label" for="name">имя</label>
+          </div>
+
+          </label>
+          <div class="contakt-page__form-field contakt-page__form-field-mb">
+            <input id="email" type="email" name="email" placeholder=" " required minlength="2"
+              class="contakt-page__form-input" />
+            <label for="email" class="contakt-page__form-label">email</label>
+
+          </div>
+          <div class="textaria-wrap">
+            <label class="contakt-page__form-field-textarea">
+              Сообщение
+              <textarea id="message" class="contakt-page__form-textaria" name="message"
+                placeholder="Оставьте свое сообщение"></textarea>
+            </label>
+            <input class="visually-hidden" name="fileFF" type="file" id="file-upload" />
+            <label for="file-upload" class="contact-page__add-file-label">
+              <svg class="textaria__icon" width="22" height="20">
+                <use href="./images/sprite.svg#icon-clip"></use>
+              </svg>
+            </label>
+          </div>
+          <p class="contakt-page__add-file-text">
+            *Прикрепите изображение / 
+            чертежи / STL / Obj / CAD-модель
+          </p>
+          <button type="submit" class="main-button contact-page__main-button">Отправить</button>
+        </form>
+
+
+      </div>
+      <div class="contakt-page__contacts">
+        <div class="contact-wraper">
+          <h3 class="contakt-page__title-contacts">
+            ТЕЛЕФОНЫ</h3>
+          <ul class="contakt-page__contacts-list">
+            <li class="contakt-page__contacts-item">
+              <a class="contakt-page__contacts-link" href="tel:+38(096)7617041">+38 (096) -76-17-041</a>
+            </li>
+            <li class="contakt-page__contacts-item">
+              <a class="contakt-page__contacts-link" href="tel:+38(099)4647415">+38 (099) -46-47-415</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-wraper">
+          <h3 class="contakt-page__title-contacts">Email</h3>
+          <ul class="contakt-page__contacts-list">
+            <li class="contakt-page__contacts-item">
+              <a class="contakt-page__contacts-link" href="mailto:3dfreedomcorp@gmail.com">3dfreedomcorp@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-wraper">
+          <h3 class="contakt-page__title-contacts">Рабочее время
+          </h3>
+          <ul class="contakt-page__contacts-list">
+            <li class="contakt-page__contacts-item">
+              <span class="contact-breakword">Пн-пт: </span><span class="contact-breakword">з 8:00 до 19:00</span>
+            </li>
+            <li class="contakt-page__contacts-item">
+              <span class="contact-breakword">Сб, Вс: </span><span class="contact-breakword">з 10:00 до 17:00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

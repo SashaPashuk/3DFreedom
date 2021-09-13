@@ -1,0 +1,120 @@
+<header class="header">
+  <div class="container header-line">
+    <!--LOGO-->
+
+    <a href="./index.html" class="logo-header"
+      ><img
+        class="logo"
+        srcset="
+          ./images/logo-small.png  101w,
+          ./images/logo-medium.png 125w,
+          ./images/logo-big.png    192w
+        "
+        sizes="(min-width: 1440px) 192px,
+            (min-width: 768px) 125px,
+            (min-width: 320px) 101px,
+            192px"
+        src="./images/logo-big.png"
+        alt="Логотип компанії"
+    /></a>
+
+    <!-- BURGER_MENU -->
+    <button class="burger-button" type="button" data-menu-open>
+      <svg class="burger-button__icon" width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+
+    <!-- CALL_BUTTON -->
+    <div class="header__call-button">
+      <button class="call-button" type="button">
+        <svg class="call-button__icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-tel"></use>
+        </svg>
+      </button>
+      <div class="call-button__dropdown">
+        <ul class="call-button__list">
+          <li class="call-button__item">
+            <a class="call-button__link" href="tel:+38(096)7617041">+38 (096) 761 70 41</a>
+          </li>
+          <li class="call-button__item">
+            <a class="call-button__link" href="tel:+38(099)4647415">+38 (099) 464 74 15</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a href="./index.html" class="pagination__link">Головна</a>
+        </li>
+        <li class="pagination__item pagination__item-servises">
+          <a href="#" class="pagination__link pagination__link-servises"
+            >Послуги
+            <svg class="pagination__icon" width="10" height="4">
+              <use href="./images/sprite.svg#icon-nav-arrow"></use>
+            </svg>
+          </a>
+          <ul class="pagination__dropdown">
+            <li class="pagination__down-item">
+              <a href="./3d-modeling.html" class="pagination__down-link">3D Моделювання</a>
+            </li>
+            <li class="pagination__down-item">
+              <a href="./3d-scanning.html" class="pagination__down-link">3D Сканування</a>
+            </li>
+            <li class="pagination__down-item">
+              <a href="./3d-printing.html" class="pagination__down-link">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="pagination__item">
+          <a href="./take-order.html" class="pagination__link">Замовити</a>
+        </li>
+        <li class="pagination__item">
+          <a href="./contacts.html" class="pagination__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- LANG-BUTTON -->
+    <div class="header__lang-button">
+      <button class="lang-button" lang="uk">ukr</button>
+      <div class="lang-button__dropdown">
+        <ul class="lang-button__list">
+          <li class="lang-button__item">
+            <a href="#" class="lang-button__link" lang="en">eng</a>
+          </li>
+          <li class="lang-button__item">
+            <a href="#" class="lang-button__link" lang="uk">ukr</a>
+          </li>
+          <li class="lang-button__item">
+            <a href="https://www.3d-freedom.com/rus/" class="lang-button__link" lang="ru">rus</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CALL-lIST -->
+
+    <ul class="call-list">
+      <li class="call-list__item">
+        <a class="call-list__link" href="tel:+38(096)7617041">
+          <svg class="call-list__icon" width="14" height="24">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
+          +38 (096) 761 70 41</a
+        >
+      </li>
+      <li class="call-list__item">
+        <a class="call-list__link" href="tel:+38(099)4647415">
+          <svg class="call-list__icon" width="14" height="24">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
+          +38 (099) 464 74 15</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>
